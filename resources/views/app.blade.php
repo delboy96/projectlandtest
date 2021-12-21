@@ -61,15 +61,15 @@
                 </button>
                 <input id="datepicker" type="text" class="w-1/2 mx-auto lg:w-full py-2 px-3 bg-gray-50 text-gray-700 rounded-xl border border-gray-400 focus:outline-none focus:border-teal-600" required>
             </div>
-            <div id="question" class="flex flex-col text-gray-700 space-y-6 lg:space-y-4">
+            <div id="question" class="question flex flex-col text-gray-700 space-y-6 lg:space-y-4" >
                 <div class="flex flex-col lg:flex-row lg:grid grid-cols-3 gap-2">
                     <label for="question" class="flex items-center px-3 font-medium">Dodaj pitanje: </label>
-                    <input id="question" type="text" class="col-span-2 py-2 px-3 bg-gray-50 text-gray-700 rounded-xl border border-gray-400 focus:outline-none focus:border-teal-600" placeholder="Tekst pitanja *" required>
+                    <input id="question" type="text" data-question-id="1" class="questiondiv col-span-2 py-2 px-3 bg-gray-50 text-gray-700 rounded-xl border border-gray-400 focus:outline-none focus:border-teal-600" placeholder="Tekst pitanja *" required>
                 </div>
                 <div class="answers flex flex-col space-y-3 ">
-                    <div class="flex flex-col lg:flex-row  lg:grid grid-cols-2 ">
+                    <div class=" flex flex-col lg:flex-row  lg:grid grid-cols-2 " >
                         <label for="answer" class="flex items-center px-3 my-2 text-gray-700 lg:place-self-end lg:my-auto">Ponuđeni odgovori : </label>
-                        <input id="answer" type="text" class="answer py-2 px-3 bg-gray-50 text-gray-700 rounded-xl border border-gray-400 focus:outline-none focus:border-teal-600" placeholder="Ponuđeni odgovor" required>
+                        <input id="answer" data-question-id="1" type="text" class="answer answerdiv py-2 px-3 bg-gray-50 text-gray-700 rounded-xl border border-gray-400 focus:outline-none focus:border-teal-600" placeholder="Ponuđeni odgovor" required>
                     </div>
                 </div>
                 <div class="flex flex-row text-right justify-between border-b border-gray-400 border-dashed py-4 lg:pb-3 lg:pt-0">
