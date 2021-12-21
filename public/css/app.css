@@ -376,13 +376,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .block {
   display: block;
@@ -396,11 +396,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden {
   display: none;
 }
-.h-10 {
-  height: 2.5rem;
-}
 .h-12 {
   height: 3rem;
+}
+.h-10 {
+  height: 2.5rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -411,16 +411,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-full {
   width: 100%;
 }
-.w-max {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+.w-12 {
+  width: 3rem;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .w-10 {
   width: 2.5rem;
 }
-.w-12 {
-  width: 3rem;
+.w-max {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .transform {
   transform: var(--tw-transform);
@@ -434,9 +437,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
 .flex-row {
   flex-direction: row;
 }
@@ -448,9 +448,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-start {
   justify-content: flex-start;
-}
-.justify-end {
-  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -481,21 +478,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.rounded-xl {
-  border-radius: 0.75rem;
+.rounded-2xl {
+  border-radius: 1rem;
 }
 .rounded {
   border-radius: 0.25rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -503,14 +498,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-3xl {
   border-radius: 1.5rem;
 }
-.rounded-2xl {
-  border-radius: 1rem;
-}
 .border {
   border-width: 1px;
-}
-.border-2 {
-  border-width: 2px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -550,9 +539,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
-.bg-transparent {
-  background-color: transparent;
-}
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -574,6 +560,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -590,23 +584,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 .pb-6 {
   padding-bottom: 1.5rem;
-}
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 .text-center {
   text-align: center;
@@ -658,6 +637,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
+.text-neutral-400 {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
+}
+.text-teal-900 {
+  --tw-text-opacity: 1;
+  color: rgb(19 78 74 / var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -665,22 +652,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-red-400 {
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
-}
-.text-teal-800 {
-  --tw-text-opacity: 1;
-  color: rgb(17 94 89 / var(--tw-text-opacity));
-}
-.text-teal-900 {
-  --tw-text-opacity: 1;
-  color: rgb(19 78 74 / var(--tw-text-opacity));
-}
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-.text-neutral-400 {
-  --tw-text-opacity: 1;
-  color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 .opacity-50 {
   opacity: 0.5;
@@ -712,45 +683,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.hover\:rounded-full:hover {
-  border-radius: 9999px;
-}
 .hover\:border-teal-600:hover {
   --tw-border-opacity: 1;
   border-color: rgb(13 148 136 / var(--tw-border-opacity));
 }
-.hover\:bg-teal-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
-}
-.hover\:bg-gray-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-.hover\:fill-teal-600:hover {
-  fill: #0d9488;
-}
-.hover\:fill-current:hover {
-  fill: currentColor;
-}
 .hover\:stroke-teal-600:hover {
   stroke: #0d9488;
-}
-.hover\:stroke-1:hover {
-  stroke-width: 1;
-}
-.hover\:stroke-2:hover {
-  stroke-width: 2;
-}
-.hover\:stroke-0:hover {
-  stroke-width: 0;
-}
-.hover\:p-3:hover {
-  padding: 0.75rem;
-}
-.hover\:text-teal-50:hover {
-  --tw-text-opacity: 1;
-  color: rgb(240 253 250 / var(--tw-text-opacity));
 }
 .hover\:text-teal-600:hover {
   --tw-text-opacity: 1;
@@ -759,16 +697,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:shadow-md:hover {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.hover\:shadow-xl:hover {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.hover\:shadow-2xl:hover {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .hover\:shadow-teal-600:hover {
@@ -786,32 +714,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-.group:hover .group-hover\:flex {
-  display: flex;
-}
 .group:hover .group-hover\:bg-teal-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(240 253 250 / var(--tw-bg-opacity));
-}
-.group:hover .group-hover\:bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.group:hover .group-hover\:stroke-teal-600 {
-  stroke: #0d9488;
-}
-.group:hover .group-hover\:stroke-teal-400 {
-  stroke: #2dd4bf;
-}
-.group:hover .group-hover\:stroke-teal-300 {
-  stroke: #5eead4;
-}
-.group:hover .group-hover\:stroke-teal-500 {
-  stroke: #14b8a6;
-}
-.group:hover .group-hover\:text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 .group:hover .group-hover\:text-gray-500 {
   --tw-text-opacity: 1;
@@ -846,6 +751,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:w-5\/6 {
     width: 83.333333%;
   }
+  .lg\:w-full {
+    width: 100%;
+  }
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -863,14 +771,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:pl-20 {
     padding-left: 5rem;
   }
-  .lg\:pb-2 {
-    padding-bottom: 0.5rem;
+  .lg\:pb-3 {
+    padding-bottom: 0.75rem;
   }
   .lg\:pt-0 {
     padding-top: 0px;
-  }
-  .lg\:pb-3 {
-    padding-bottom: 0.75rem;
   }
   .lg\:text-left {
     text-align: left;
