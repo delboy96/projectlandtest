@@ -61,7 +61,7 @@
                 </button>
                 <input id="datepicker" type="text" class="w-1/2 mx-auto lg:w-full py-2 px-3 bg-gray-50 text-gray-700 rounded-xl border border-gray-400 focus:outline-none focus:border-teal-600" required>
             </div>
-            <div id="question" class="question flex flex-col text-gray-700 space-y-6 lg:space-y-4" >
+            <div id="questiondiv" class="question flex flex-col text-gray-700 space-y-6 lg:space-y-4" >
                 <div class="flex flex-col lg:flex-row lg:grid grid-cols-3 gap-2">
                     <label for="question" class="flex items-center px-3 font-medium">Dodaj pitanje: </label>
                     <input id="question" type="text" data-question-id="1" class="questiondiv col-span-2 py-2 px-3 bg-gray-50 text-gray-700 rounded-xl border border-gray-400 focus:outline-none focus:border-teal-600" placeholder="Tekst pitanja *" required>
@@ -112,6 +112,7 @@
 </body>
 {{--Sweet Alert--}}
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+{{--Datepicker--}}
 <script src="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.js"></script>
 <script src="{{asset('js/main.js')}}"></script>
 </html>
